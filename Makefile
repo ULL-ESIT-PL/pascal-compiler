@@ -30,6 +30,9 @@ yacc.tab.c yacc.tab.h: yacc.y
 lex.yy.c: lex.l
 	$(LEX) lex.l
 
+test7: 
+	./main testspl/test7.pas testspl/test7.asm
+	
 clean:
 	@rm -f $(OBJECT)  *.o
 
